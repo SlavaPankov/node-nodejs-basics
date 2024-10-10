@@ -11,7 +11,7 @@ const parseArgs = () => {
         results[key] = value;
     }
 
-    Object.entries(results).forEach(([key, value]) => console.log(`${key} is ${value}`));
+    console.log(Object.entries(results).map(([key, value]) => `${key} is ${value}`).join(', '));
 };
 
 parseArgs();
